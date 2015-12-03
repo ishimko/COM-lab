@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    portselecterwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    portselecterwindow.h \
+    types.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    portselecterwindow.ui
+
+RESOURCES +=
