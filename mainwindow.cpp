@@ -72,6 +72,7 @@ void MainWindow::onReadyRead(){
 				chatPort.write(controlSequence);
 
 				ui->rbtnDeactivate->setChecked(true);
+				ui->btnSend->setEnabled(false);
 			}
 			else
 				if (data[0] == (char)CONTROL_MSG)
@@ -86,6 +87,7 @@ void MainWindow::onReadyRead(){
 				chatPort.write(controlSequence);
 
 				ui->rbtnActivate->setChecked(true);
+				ui->btnSend->setEnabled(true);
 			}
 			break;
 	}
